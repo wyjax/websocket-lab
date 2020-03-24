@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>엄정기와 함께하는 욕배</title>
+    <link rel="stylesheet" href="webjars/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body class="bg-dark" onbeforeunload="WebSocket.dis">
+
+<div class="container bg-white rounded">
+    <div id="chatOutput" class="list-group mx-auto overflow-auto" style="height: 600px; max-width: 700px">
+<!--    대화 들어옴    -->
+    </div>
+    <form class="form-inline mr-4 mx-auto" style="max-width: 700px;">
+        <input id="chatId" class="form-control col-md-2">
+        <input id="chatInput" type="text" class="form-control col-md-9">
+        <input id="chatSend" type="button" class="btn btn-primary col-md-1" value="보내기">
+    </form>
+</div>
+
+<script src="/webjars/sockjs-client/1.0.2/sockjs.min.js"></script>
+<script src="/webjars/stomp-websocket/2.3.3/stomp.min.js"></script>
+<script src="js/socket.js"></script>
+</body>
+</html>
